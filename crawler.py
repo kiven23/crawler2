@@ -78,7 +78,7 @@ def insert(url):
         collection.insert_one(data)
         print(data)
 def main():
-    seed_url = "science.html"  # Replace with the URL you want to start crawling from
+    seed_url = "python.html"  # Replace with the URL you want to start crawling from
     get_urls_from_page(seed_url)
     max_depth = 2  # Maximum depth to crawl from the seed URL
 
