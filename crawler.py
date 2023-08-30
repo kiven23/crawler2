@@ -8,7 +8,7 @@ from urllib.parse import quote_plus
 # MongoDB Atlas connection URI with the password properly encoded
 password = quote_plus("M15@2dwin0n7y")
 uri = f"mongodb+srv://stevefox_linux:{password}@cluster0.cz85k.mongodb.net/?retryWrites=true&w=majority"
- 
+
  
 data = []
 def get_urls_from_page(url):
@@ -78,7 +78,7 @@ def insert(url):
         collection.insert_one(data)
         print(data)
 def main():
-    seed_url = "/python.html"  # Replace with the URL you want to start crawling from
+    seed_url = "python.html"  # Replace with the URL you want to start crawling from
     get_urls_from_page(seed_url)
     max_depth = 2  # Maximum depth to crawl from the seed URL
 
